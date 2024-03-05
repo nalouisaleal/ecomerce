@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+   <html long='pt-br'>
+       <head>
+           <meta charset = 'UTF-8'/>
+           <title>Cadastro</title>
+           <link rel='stylesheet' href='cadastro.css'/>
+       </head>
+      <body>
+      <div class='container'>
+      <div class='form_imagem'>
+          <img src='/imagens/CLICKFUN_LOGOFINAL.png' alt='Bem-vindo a Clickfun!!'>
+      </div>
+  <div class='form'>
+        <form action='$IncluiOuAtualiza' name='form' method='post'>
+        <div class='form_header'>
+                <div class='title'>
+                    <h1>Cadastre-se</h1>
+                </div>
+                <div class='btn_login'>
+                    <button><a href='/login/login.php'>Entrar</a></button>
+                </div>
+            </div>
+
+            <div class='informacoes'>
+                <div class = 'caixainfo'>
+                    <input type='hidden'  nome='cod_usuario' value = '$cod_usuario'>
+                </div>
+
+                <div class='caixainfo'>
+                    <label for='nomecompleto'>Nome completo: </label><br>
+                    <input type='text' id='nomecompleto' name='nome_usuario' placeholder='Nome completo' value = '$nome_usuario' required>
+                </div>
+
+                <div class='caixainfo'>
+                    <label for='email'>E-mail: </label><br>
+                    <input type='email' id='email' name='email_usuario' placeholder='Email' value = '$email_usuario' required>
+                </div>
+
+                <div class='caixainfo'>
+                    <label for='telefone'>Telefone: </label><br>
+                    <input type='tel' id='telefone' name='telefone_usuario' placeholder='(xx)xxxx-xxxx'  value = '$telefone_usuario' required>
+                </div>
+                
+                <div class='caixainfo'>
+                    <label for='senha'>Senha: </label><br>
+                    <input type='password' id='senha' name='senha_usuario' placeholder='senha'  value = '$senha_usuario'>
+                </div>
+                <div class='caixainfo'>
+                    <label for='senha'>Confirme sua senha: </label><br>
+                    <input type='password' id='confsenha' name='confsenha' placeholder='confirme sua senha'>
+                </div>
+            </div>
+
+            <div class='secso'>
+                <div class='titulosexo'>
+                    <h5>Sexo:</h5>
+                </div>
+                <div class='grupos'>
+                    <div class='grupos1'>
+                        <input type='radio' id='feminino' name='sexo_usuario' value='f'>
+                        <label for='feminino'>Feminino</label>
+                    </div>
+                    <div class='grupos1'>
+                        <input type='radio' id='masculino' name='sexo_usuario' value='m'>
+                        <label for='masculino'>Masculino</label>
+                    </div>
+                    <div class='grupos1'>
+                        <input type='radio' id='outro' name='sexo_usuario' value='o'>
+                        <label for='outro'>Outro</label>
+                    </div>
+                    <div class='grupos1'>
+                        <input type='radio' id='prefironaodizer' name='sexo_usuario' value='pnd'>
+                        <label for='prefironaodizer'>Prefiro não dizer</label>
+                    </div>
+                </div>
+            </div>
+            <div class='continuabtn'>
+                <button value='Cadastre-se'>Cadastre-se</button>
+            </div> 
+        </form>
+  </div>
+  </div>
+</body>
+</html>
