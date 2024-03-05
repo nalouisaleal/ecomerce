@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Carrinho de Compras</title>
+    <link rel='stylesheet' href='styles.css' />
+    <link
+      href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+      rel='stylesheet'
+    />
+  </head>
+  <body>
+    <!--barra de menu-->
+    <header class='flex'>
+      <a href='#' class='logo'><img src='logo.png' alt='logo'></a>
+      <ul class='navmenu flex'>
+          <li>
+              <form action='https://www.google.com/search' method='get' class='search-bar'> 
+                  <input type='text' placeholder='search'>
+                  <button type='submit'><i class='bx bx-search'></i></button>
+              </form>
+          </li>
+      </ul>
+      <ul class='navmenu flex'>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Produtos</a></li>
+          <li><a href='#'>Carrinho</a></li>
+          <li><a href='#'>Desenvolvedores</a></li>
+      </ul>
+      <div class='nav-icon flex'>
+          <a href='login.php'><i class='bx bx-user-circle'></i></a>
+      </div>
+
+      <div class='bx bx-menu' id='menu-icon'></div>
+  </header>
+
+    <!--DISPLAY TABELA DE PRODUTOS-->
+    <main>
+      <div class='page-title'>SEU CARRINHO</div><!--NOME DO CARRINHO-->
+      <div class='content'><!--ENGLOBA TUDO!!-->
+        
+        <section> <!--MOSTRA OS PRODUTOS DENTRO DO CARRINHO-->
+          <table> <!--TABELA DE FORMATAÇÃO-->
+            <thead> <!--CABEÇALHO DA TABELA-->
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <!--<th>-</th>-->
+              </tr>
+            </thead>
+
+            <tbody> <!--PRODUTO1-->
+              <tr>
+                <td> <!--DISPLAY DA IMAGEM E DESCRIÇÃO DO PRODUTO-->
+                  <div class='product'> 
+                    <img src='foto.jfif' alt='' width='100' height='120' />
+                    <div class='info'>
+                      <div class='name'>Polaroid Frame</div>
+                      <div class='category'>Simple polaroid</div>
+                    </div>
+                  </div>
+                </td>
+
+                <td>R$ 3</td> <!--VALOR-->
+                
+                <td> <!--ADICIONAR OU REMOVER PRODUTOS-->
+                  <div class='qty'>
+                    <a href=''><button><i class='bx bx-minus'></i></button></a>
+                    <span>2</span>
+                    <a href=''><button><i class='bx bx-plus'></i></button></a>
+                  </div>
+                </td>
+
+                <td>R$ 6</td> <!--SOMA TOTAL (PRODUTO*QUANTIDADE)-->
+
+                <td> <!--BOTÃO DE REMOVER PRODUTO DO CARRINHO-->
+                  <a href=''><button class='remove'><i class='bx bx-x'></i></button></a>
+                </td>
+
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <aside>
+          <div class='box'> <!--ESPAÇO DE FINALIZAR COMPRA-->
+            
+            <section>Resumo da compra</section> <!--NOME DO ESPAÇO-->
+           
+            <div class='info'> <!--INFOS DA COMPRA-->
+              <div><span>Sub-total</span><span>R$ 418</span></div>
+              <div><span>Frete</span><span>Gratuito</span></div>
+             
+              <div> <!--CUPOM DESCONTO-->
+                <button>
+                  Adicionar cupom de desconto
+                  <i class='bx bx-right-arrow-alt'></i>
+                </button>
+              </div>
+
+            </div>
+
+            <footer> <!--APRESENTA VALOR FINAL DA COMPRA-->
+              <span>Total</span>
+              <span>R$ 240</span>
+            </footer>
+
+          </div>
+
+         <a href=''>Finalizar Compra</a> <!--BOTÃO FINALIZAR COMPRA-->
+        </aside>
+
+      </div>
+
+<!--rodape-->
+     <section class="contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="imagens/logo.png" alt="">
+                <p><a href="https://cti.feb.unesp.br/">Colégio Técnico Industrial "Prof. Isaac Portal Roldán"</a></p>
+                <p><a href="https://www.google.com/maps/place/Col%C3%A9gio+T%C3%A9cnico+Industrial+%22Prof.+Isaac+Portal+Rold%C3%A1n%22+-+UNESP/@-22.340622,-49.0276889,17z/data=!3m1!4b1!4m6!3m5!1s0x94bf67ba4accea4f:0xc015eb23d210db44!8m2!3d-22.340627!4d-49.025114!16s%2Fg%2F12176jrj?entry=ttu">Av. Nações Unidas, 58-50 - Núcleo Residencial <br> Presidente Geisel - Bauru/SP</a></p>
+                <p><a href="mailto:clickfun2023@gmail.com?subject=">clickfun2023@gmail.com</a></p>
+
+                <div class="social-icon">
+                    <a href="https://instagram.com/clickfunbauru?igshid=NzZlODBkYWE4Ng=="><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.youtube.com/channel/UC1-BXPs1yCiEPBx0tQEF0aQ/"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+
+            <div class="second-info">
+                <h4>Ajuda</h4>
+                <p><a href="mailto:clickfun2023@gmail.com?subject=Suporte">Contact us</a></p>
+                <p><a href="devops/desenvolvedores.html">Desenvolvedores</a></p>
+            </div>
+
+            <div class="third-info">
+                <h4>Comprar</h4>
+                <p><a href="produto/produtos.php">Polaroids</a></p>
+            </div>
+
+            <div class="fourth-info">
+                <h4>Projeto</h4>
+                <p><a href="devops/desenvolvedores.html">Desenvolvedores</a></p>
+                
+            </div>
+            <div class = "subir">
+                <h4>Voltar</h4>
+                <p><a href="#topo"><i class='bx bxs-to-top'></i></a></p>
+            </div>
+        </div>
+    </section>
+
+    <div class="end-text">
+        <p>Copyright © @2023. All Rights Reserved.Designd By ClickFun.</p>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
+    </main>
+  </body>
+</html>
