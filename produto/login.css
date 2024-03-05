@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+
+.login{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem{
+    padding: 0;
+    width: 20vw;
+    
+}
+
+.login_esq{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(white,white) padding-box, linear-gradient(to top, #cb60d1c2, #fac871) border-box;
+    border: 4px solid transparent;
+
+}
+
+.login_esq>h1{
+   background: linear-gradient(to bottom, #852488ff, #ffb02aff);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: 2rem;
+   font-weight: bold;
+   line-height: 1.1;
+}
+
+.login_dir{
+    width: 35vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(white,white) padding-box, linear-gradient(to top, #cb60d1c2, #fac871) border-box;
+    border: 4px solid transparent;
+}
+
+
+.espaco_login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.espaco_login > h1{
+    color: #ffb02a;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    /*border-style:#852488ff;*/
+    padding: 15px;
+    background: #ffffff;
+    
+    color: #000;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #852488ff;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #000;
+    margin-bottom: 10px;
+}
+/*
+.textfield > input::placeholder{
+    color: #ffb02a;
+}*/
+
+.btn_login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: #cb60d1c2;
+    background-color: #ffffff;
+}
+
+.btn_cadastro{
+    width: 60%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: #cb60d1c2;
+    background-color: #ffffff;
+}
