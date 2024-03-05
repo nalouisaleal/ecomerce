@@ -1,0 +1,150 @@
+*{  
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: white;
+
+}
+
+html {
+    padding: 0;
+    height: 70px;
+}
+h3{ font-size: 10px;}
+
+.titulos>p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 78px;
+    font-size: 25px; 
+    padding: 10px;
+}
+
+.titulos>h1{
+    padding: 15px;
+    font-family: Raleway;
+    background-color: white;
+}
+
+/*titulo*/
+.desenv > h1{
+    font-size: 24px;
+    font-family: Ruleaway, Arial;
+    padding: 10px 180px;
+    justify-content: center;
+    display: flex;
+    background: linear-gradient(to bottom, #cb60dc, #fac871);
+    color: #ffff;
+    margin: 50px 0;
+}
+
+/*grupo*/
+.legenda1>h3{
+    font-family: Ruleaway, Arial;
+    background-color: white;
+    font-size:medium;
+}
+
+.nois{
+    text-align: center;
+}
+
+.nois img{
+    padding: 20px;
+}
+
+/*membros*/
+
+.membros{
+    display:flex ;
+}
+
+.polaroid{
+    text-align: center;
+    display: flex;
+    padding: 5px 5px 30px;
+    border: 2px solid black;
+    height: 63vh;
+    width: 200vh;
+    flex-direction: column;
+    margin: 0 10px 10px 10px;
+}
+
+/*polaroid*/
+.pessoa{
+    display: flex;
+    margin: 10px 10px 0 10px;
+    justify-items: center;
+}
+
+.pessoa>img{
+    border: 1px solid black;
+    padding-bottom: 2px;
+    height: 40vh;
+    width: 44vh;
+}
+
+.nomefunc{
+    font-family: Raleaway, Arial;
+    background-color: white;
+    font-size:18px;
+}
+
+
+.professores{
+    display: flex;
+}
+
+.infos{
+    width: 40%;
+    height: 60vh;
+    margin: 60px;
+    text-align: justify;
+    font-size: 30px; 
+}
+
+.logo2{
+    margin: 60px;
+    float: right;
+    height: 335px;
+    width: 580px;
+}
+
+.patrocinadores{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    padding: 15px;
+}
+
+.container>img{
+    width: 800px;
+    margin: 10px 45px 20px 0;
+}
+
+.container>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    align-items: center;
+    margin: 10px 20px 10px 45px;
+}
+
+.containerr{
+    display: inline-block;
+}
+
+.polaroide{
+    text-align: center;
+    display: flex;
+    padding: 5px 10px 30px;
+    border: 2px solid black;
+    height: 62vh;
+    width: 50vh;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+}
